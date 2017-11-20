@@ -47,7 +47,7 @@ export default {
 
     removeUser: function (user) {
           console.log("delete user");
-          axios.delete(`http://localhost:1337/collaborateur/${user._id}`, user)
+          axios.delete(`http://localhost:1337/collaborateur/${user._id}`)
               .then(function(response){
                   console.log(response);
 
